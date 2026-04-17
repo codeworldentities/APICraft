@@ -1,0 +1,40 @@
+<!-- Auto-generated: responsive — responsive v2892 -->
+<div class="responsive-—-responsive-2892">
+  <header class="section">
+    <h2>responsive — responsive</h2>
+    <nav class="nav-2892">
+      <a href="#section-1">Overview</a>
+      <a href="#section-2">Details</a>
+    </nav>
+  </header>
+  <main class="flex-row">
+    <div class="content">
+      <p>Generated component for responsive — responsive</p>
+      <span class="badge badge-2892">v2892</span>
+    </div>
+  </main>
+</div>
+
+<style>
+.responsive-—-responsive-2892 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 10px;
+  background: #ff55b1;
+  border-radius: 16px;
+  border: 1px solid #0883c9;
+}
+.responsive-—-responsive-2892 .section {
+  color: #b4ec13;
+  font-size: 18px;
+  font-weight: 600;
+}
+.badge-2892 {
+  background: #0883c9;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+</style>
