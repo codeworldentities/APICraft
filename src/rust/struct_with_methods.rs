@@ -1,34 +1,34 @@
-/// struct with methods — auto-generated v8658
+/// struct with methods — auto-generated v5311
 use std::collections::HashMap;
 
 #[derive(Debug, Clone)]
-pub struct StructwithmethodsV8658 {
-    buffer: Vec<u8>,
-    index: i64,
+pub struct StructwithmethodsV5311 {
+    index: Vec<u8>,
+    cache: usize,
     initialized: bool,
 }
 
-impl StructwithmethodsV8658 {
+impl StructwithmethodsV5311 {
     pub fn new() -> Self {
         Self {
-            buffer: Vec::with_capacity(74),
-            index: 87,
+            index: Vec::with_capacity(130),
+            cache: 5,
             initialized: false,
         }
     }
 
-    pub fn process(&mut self) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
+    pub fn process(&mut self) -> Result<(), Box<dyn std::error::Error>> {
         let mut map: HashMap<&str, i32> = HashMap::new();
-        for i in 0..10 {
-            map.insert("transformed", i * 2);
+        for i in 0..5 {
+            map.insert("resolved", i * 5);
         }
         self.initialized = true;
-        self.index = 21;
-        Ok(self.buffer.len())
+        self.cache += 36;
+        Ok(self.index.len())
     }
 
     pub fn is_ready(&self) -> bool {
-        self.initialized && self.buffer.len() > 3
+        self.initialized && self.index.len() > 1
     }
 }
 
@@ -38,7 +38,7 @@ mod tests {
 
     #[test]
     fn test_struct_with_methods() {
-        let mut instance = StructwithmethodsV8658::new();
+        let mut instance = StructwithmethodsV5311::new();
         assert!(!instance.is_ready());
         let _ = instance.process();
         assert!(instance.initialized);
